@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>اتصل بنا</h1>
+        <p>يرجى ملء النموذج أدناه لإرسال ملاحظاتك أو استفساراتك.</p>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>نموذج الاتصال</h2>
+            <form action="home.html" method="POST">
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="nom" required placeholder="أدخل اسمك الكامل">
+
+                <label for="birthday">تاريخ الميلاد:</label>
+                <input type="date" id="birthday" name="birthday" required>
+
+                <label for="gender">الجنس:</label>
+                <select id="gender" name="genre" required>
+                    <option value="">اختر الجنس</option>
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                </select>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+                <label for="governorate">الولاية:</label>
+                <select id="governorate" name="gouvernorat" required>
+                    <option value="">اختر الولاية</option>
+                    <option value="tunis">تونس</option>
+                    <option value="sfax">صفاقس</option>
+                    <option value="sousse">سوسة</option>
+                    <option value="gabes">قابس</option>
+                    <option value="kairouan">القيروان</option>
+                    <option value="nabeul">نابل</option>
+                    <option value="other">أخرى</option>
+                </select>
+
+                <label for="feedback">رأيك:</label>
+                <textarea id="feedback" name="avis" rows="4" required placeholder="شارك رأيك أو ملاحظاتك"></textarea>
+
+                <label for="rating">التقييم:</label>
+                <input type="number" id="rating" name="note" min="1" max="10" required placeholder="أدخل تقييمًا من 1 إلى 10">
+
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة - موقع النظام الشمسي</p>
+    </footer>
+</body>
+</html>
